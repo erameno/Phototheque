@@ -1,0 +1,132 @@
+html, body, main 
+{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: fit-content;
+  background-color: azure;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  min-height: 100%;
+  position: absolute;
+}
+
+main{
+  width: 80%;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+footer{
+  position: fixed;
+  width: 10%;
+  bottom: 0%;
+  right: 0%;
+  text-align: end;
+}
+
+section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2.5%;
+}
+
+.secPair{
+  flex-direction: row;
+}
+
+.secImpair{
+  flex-direction: row-reverse;
+}
+
+section:last-of-type{
+  padding-bottom: 2.5%;
+}
+
+
+.imgHori{
+  position: relative;
+  width: 30%;
+  height: 100%;
+}
+
+.secPair .imgHori:first-of-type{
+  margin-left: 0%;
+  margin-right: 2.5%;
+}
+
+.secImpair .imgHori:last-of-type{
+  margin-left: 2.5%;
+  margin-right: 0%;
+}
+
+.divVerti{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+
+}
+
+.imgVerti{
+  position: relative;
+  height: 42.5%;
+  width: 100%;
+}
+
+.divVerti  .imgVerti:first-of-type{
+  padding-bottom: 5%;
+}
+
+
+.imgHoriFull{
+  padding: 0%;
+  margin-right: 0%;
+  position: fixed;
+  right: 15%;
+  top: 2.5%;
+  margin-bottom: 5%;
+  height: 90%;
+}
+
+.imgVertiFull{
+  width: 70%;
+  padding: 0%;
+  margin-right: 0%;
+  position: fixed;
+  right: 15%;
+  top: 2.5%;
+  margin-bottom: 5%;
+}
+
+.imgHide{
+  display: none;
+}
+
+
+.divInfoHide{
+  display: none;
+}
+
+.divInfoShow{
+  display: flex;
+  flex-direction: column;
+}
+
+.divInfoShow button{
+  width: min-content;
+}
+
+.bodyDark{
+  background-color: #1C2833;
+  color: white;
+}
+
+.bodyWhite{
+  background-color: azure;
+  color: black;
+}

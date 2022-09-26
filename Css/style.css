@@ -1,0 +1,154 @@
+html, body, main {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+main{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: azure;
+}
+
+footer{
+  position: fixed;
+  width: 100%;
+  bottom: 0%;
+  background-color: azure;
+  text-align: end;
+}
+
+#carousel {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  width: 90%;
+}
+#carousel div {
+  position: absolute;
+  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+  opacity: 0.9;
+}
+#carousel div img {
+  width: 300px;
+  transition: width 1s;
+}
+#carousel div.hideLeft {
+  left: 0%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+#carousel div.hideLeft img {
+  width: 200px;
+}
+#carousel div.hideRight {
+  left: 100%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+#carousel div.hideRight img {
+  width: 200px;
+}
+#carousel div.prev {
+  z-index: 5;
+  left: 30%;
+  transform: translateY(50px) translateX(-50%);
+}
+#carousel div.prev img {
+  width: 300px;
+}
+#carousel div.prevLeftSecond {
+  z-index: 4;
+  left: 15%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+#carousel div.prevLeftSecond img {
+  width: 200px;
+}
+#carousel div.selected {
+  z-index: 10;
+  left: 50%;
+  transform: translateY(0px) translateX(-50%);
+  opacity: 1;
+}
+#carousel div.next {
+  z-index: 5;
+  left: 70%;
+  transform: translateY(50px) translateX(-50%);
+}
+#carousel div.next img {
+  width: 300px;
+}
+#carousel div.nextRightSecond {
+  z-index: 4;
+  left: 85%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+#carousel div.nextRightSecond img {
+  width: 200px;
+}
+
+#prev, #next{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+  height: 50px;
+  width: 50px;
+  border : none;
+  background-color: transparent;
+  transition: width 1s, height 1s;
+  -webkit-transition: width 1s, height 1s;
+  -moz-transition: width 1s, height 1s;
+  -ms-transition: width 1s, height 1s;
+  -o-transition: width 1s, height 1s;
+}
+
+#prev:hover, #next:hover{
+  width: 70px;
+  height: 70px;
+}
+
+
+#carousel div.selected img:hover{
+  width: 400px;
+}
+
+#prev{
+  background-image: url(../Images/Icons/icons8-flèche-pointant-vers-la-gauche-96.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#next{
+  background-image: url(../Images/Icons/icons8-flèche-96.png);
+  background-size: contain;
+}
+
+
+
+
+
+@media screen and (max-width : 1000px )
+{
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.bodyDark{
+  background-color: #1C2833;
+  color: white;
+}
+
+.bodyWhite{
+  background-color: azure;
+  color: black;
+}
