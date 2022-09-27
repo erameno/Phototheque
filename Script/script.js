@@ -53,3 +53,21 @@ $('#prev').click(function() {
 $('#next').click(function() {
   moveToSelected('next');
 });
+
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+var def = true;
+var cpt = 0;
+
+sleep(2000).then(() => {moveToSelected('next'); });
+
+for(var i=0; i<10; i++)
+{
+  sleep(1000 + 1000 * cpt).then(() => {moveToSelected('next'); });
+  sleep(2000 + 2000 * cpt).then(() => {moveToSelected('prev'); });
+
+  cpt++;
+}
