@@ -4,6 +4,7 @@ html, body, main
   margin: 0;
   padding: 0;
   height: fit-content;
+  min-height: 100%;
   background-color: azure;
 }
 
@@ -15,9 +16,12 @@ body{
 }
 
 main{
-  width: 80%;
-  /* display: flex;
-  flex-direction: column; */
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 1em;
 }
 
 footer{
@@ -28,105 +32,80 @@ footer{
   text-align: end;
 }
 
-section{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 2.5%;
+.imgVerti{
+  position: relative;
+  width: 48%;
 }
-
-.secPair{
-  flex-direction: row;
-}
-
-.secImpair{
-  flex-direction: row-reverse;
-}
-
-section:last-of-type{
-  padding-bottom: 2.5%;
-}
-
 
 .imgHori{
   position: relative;
-  width: 30%;
-  height: 100%;
-}
-
-.secPair .imgHori:first-of-type{
-  margin-left: 0%;
-  margin-right: 2.5%;
-}
-
-.secImpair .imgHori:last-of-type{
-  margin-left: 2.5%;
-  margin-right: 0%;
-}
-
-.divVerti{
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  height: 100%;
-
-}
-
-.imgVerti{
-  position: relative;
-  height: 42.5%;
   width: 100%;
 }
 
-.divVerti  .imgVerti:first-of-type{
-  padding-bottom: 5%;
+img{
+  padding-bottom: 2%;
+  position: relative;
+  width: inherit;
 }
 
 
+
+.imgVertiFull{
+  padding: 0%;
+  margin-right: 0%;
+  position: absolute;
+  top: 5%;
+  margin-bottom: 5%;
+  max-height: 90%;
+  width: auto;
+}
+  
 .imgHoriFull{
   padding: 0%;
   margin-right: 0%;
-  position: fixed;
-  right: 15%;
-  top: 2.5%;
+  position: absolute;
+  top: 5%;
   margin-bottom: 5%;
-  height: 90%;
-}
-
-.imgVertiFull{
-  width: 70%;
-  padding: 0%;
-  margin-right: 0%;
-  position: fixed;
-  right: 15%;
-  top: 2.5%;
-  margin-bottom: 5%;
+  max-width: 50%;
+  height: auto;
 }
 
 .imgHide{
   display: none;
 }
-
-
+  
+  
 .divInfoHide{
   display: none;
 }
-
+  
 .divInfoShow{
+  position: fixed;
   display: flex;
   flex-direction: column;
+  top: 5%;
+  right: 1%;
 }
-
+  
 .divInfoShow button{
   width: min-content;
 }
-
+  
 .bodyDark{
   background-color: #1C2833;
   color: white;
 }
-
+  
 .bodyWhite{
   background-color: azure;
   color: black;
+}
+
+#divAccueil{
+  position: absolute;
+  display: flex;
+  top: 5%;
+  left: 1%;
+  flex-direction: column;
+  align-items: stretch;
 }
