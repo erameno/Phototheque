@@ -5,14 +5,23 @@ html, body, main {
   padding: 0;
 }
 
+body{
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+}
 
 main{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-content: center;
   background-color: azure;
   align-items: center;
+  margin-top: 3.5em;
+  justify-content: flex-start;
+  width: 60%;
 }
+
 
 footer{
   position: fixed;
@@ -23,18 +32,22 @@ footer{
 }
 
 #carousel{
-  margin-bottom: 20em;
-  width: 60%;
+  width: 100%;
+  margin-bottom: 1em;
 }
 
 header{
-  position: fixed;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  position: absolute;
   width: 100%;
   height: 2.5em;
-  background-color: #121a21;
   display: flex;
   justify-content: center;
   align-items: center;
+  top:0%;
+  background-color: rgb(159, 178, 178);
+  color: black;
 }
 nav a{
   color: white;
@@ -63,6 +76,16 @@ nav a:hover{
   color: black;
 }
 
+.headerDark{
+  background-color:#121a21;
+  color: white;
+}
+
+.headerWhite{
+  background-color: rgb(159, 178, 178);
+  color: black;
+}
+
 
 @media screen and (max-width : 1000px )
 {
@@ -79,4 +102,50 @@ a:visited{
 #divColor{
   position: absolute;
   right: 1em;
+}
+
+#divOnglet{
+  width: 100%;
+}
+
+#divOnglet nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121a21;
+}
+
+.btnOnglet{
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+
+.imgVerti{
+  position: relative;
+  width: 48%;
+}
+
+.imgHori{
+  position: relative;
+  width: 100%;
+}
+
+img{
+  padding-bottom: 2%;
+  position: relative;
+  width: inherit;
+}
+
+#divImage1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#nav-tab{
+  margin-bottom: 1em;
 }

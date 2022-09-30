@@ -3,6 +3,7 @@ var btnWhite = document.getElementById('btnColorWhite');
 var main = document.getElementById("main");
 var footer = document.getElementById("footer");
 var body = document.getElementById("body");
+var header = document.getElementById("header");
 
 var theme = localStorage.getItem('theme');
 if(theme == 'Dark'){
@@ -14,6 +15,7 @@ else{
 
 function Dark(){
 
+    header.className = 'headerDark';
     main.className = 'bodyDark';
     footer.className = 'bodyDark';
     body.className = 'bodyDark';
@@ -26,6 +28,7 @@ function Dark(){
 
 function White(){
     
+    header.className = 'headerWhite';
     main.className = 'bodyWhite';
     footer.className = 'bodyWhite';
     body.className = 'bodyWhite';

@@ -3,28 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <title>Photothèque | Maël-Conan Lemarchand</title>
-  <link rel="stylesheet" href="./Css/style.css">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="./owlcarousel/owl.carousel.min.css">
   <link rel="stylesheet" href="./owlcarousel/owl.theme.default.min.css">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./Css/style.css">
 </head>
 
 <body id="body">
 
-  <header>
+  <header id="header">
 
-    <nav>
-      <a href="./Page_Espace">Espace</a>
-      <a href="./Page_Espace">Star Citizen</a>
-      <a href="./Page_Espace">Dune</a>
-      <a href="./Page_Espace">Mandalorian</a>
-    </nav>
+    <h1>
+      PHOTOTHEQUE
+    </h1>
 
     <div id="divColor">
-      <button class="btnCouleur" id="btnColorDark">Sombre</button>
-      <button class="btnCouleur" id="btnColorWhite">Clair</button>
+      <button class="btnCouleur" id="btnColorDark"><img src="./Images/Icons/icons8-symbole-de-la-lune-24.png"></button>
+      <button class="btnCouleur" id="btnColorWhite"><img src="./Images/Icons/icons8-soleil-24.png"></button>
     </div>
   </header>
 
@@ -35,21 +35,62 @@
         <div class="owl-stage">
 
           <div class="owl-item">
-          <a href="./Page_Espace"><img src="./Images/Index/Espace_Index.jpg"></a>
+          <button id="imgEspace" class="nav-Espace"><img src="./Images/Index/Espace_Index.jpg"></button>
         </div>
     
         <div class="owl-item">
-          <a href="./Page_StarCitizen"><img src="./Images/Index/StarCitizen_Index.jpg"></a>
+          <button id="imgStarCitizen" class="nav-Star_Citizen"><img src="./Images/Index/StarCitizen_Index.jpg"></button>
         </div>
     
         <div class="owl-item">
-          <a href="./Page_Dune"><img src="./Images/Index/Dune_Index.png"></a>
+          <button id="imgDune" class="nav-Dune"><img src="./Images/Index/Dune_Index.png"></button>
         </div>
     
         <div class="owl-item">
-          <a href="./Page_Mandalorian.html"><img src="./Images/Index/Mandalorian_Index.jpeg"></a>
+          <button id="imgMandalorian" class="nav-Mandalorian"><img src="./Images/Index/Mandalorian_Index.jpeg"></button>
         </div>
         </div>
+      </div>
+    </div>
+
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-Espace" role="tab" aria-controls="nav-Espace" aria-selected="true">Espace</a>
+        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-Star_Citizen" role="tab" aria-controls="nav-Star_Citizen" aria-selected="false">Star Citizen</a>
+        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-Dune" role="tab" aria-controls="nav-Dune" aria-selected="false">Dune</a>
+        <a class="nav-item nav-link" id="nav-contact2-tab" data-toggle="tab" href="#nav-Mandalorian" role="tab" aria-controls="nav-Mandalorian" aria-selected="false">Mandalorian</a>
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-Espace" role="tabpanel" aria-labelledby="nav-home-tab">
+        <img class="imgHori img" src="./Images/Pages/Espace/image1.png">
+        <img class="imgHori img" src="./Images/Pages/Espace/image2.png">
+        <img class="imgHori img" src="./Images/Pages/Espace/image3.png">
+        <img class="imgHori img" src="./Images/Pages/Espace/image4.png">
+      </div>
+      <div class="tab-pane fade" id="nav-Star_Citizen" role="tabpanel" aria-labelledby="nav-profile-tab">
+        <img class="imgHori img" src="./Images/Pages/StarCitizen/image1.jpg">
+        <img class="imgHori img" src="./Images/Pages/StarCitizen/image2.jpg">
+        <img class="imgHori img" src="./Images/Pages/StarCitizen/image3.jpg">
+        <img class="imgHori img" src="./Images/Pages/StarCitizen/image4.jpg">
+        <img class="imgHori img" src="./Images/Pages/StarCitizen/image5.png">
+      </div>
+      <div class="tab-pane fade" id="nav-Dune" role="tabpanel" aria-labelledby="nav-contact-tab">
+        <img class="imgHori img" src="./Images/Pages/Dune/image2.webp">
+      
+        <div id="divImage1">
+          <img class="imgVerti img" src="./Images/Pages/Dune/image7.jpg">
+          <img class="imgVerti img" src="./Images/Pages/Dune/image8.jpg">
+        </div>
+
+        <img class="imgHori img" class="imgVerti1" src="./Images/Pages/Dune/image9.jpg">
+      </div>
+      <div class="tab-pane fade" id="nav-Mandalorian" role="tabpanel" aria-labelledby="nav-contact-tab">
+        <img class="imgHori img" src="./Images/Pages/Mandalorian/image1.jpg">
+        <img class="imgHori img" src="./Images/Pages/Mandalorian/image2.jpg">
+        <img class="imgHori img" src="./Images/Pages/Mandalorian/image3.avif">
+        <img class="imgHori img" src="./Images/Pages/Mandalorian/image4.jpg">
+        <img class="imgHori img" src="./Images/Pages/Mandalorian/image5.jpg">
       </div>
     </div>
   </main>
@@ -57,8 +98,6 @@
 
 
   <footer id="footer">
-    
-
     Site développé et mis à jour par : <a href="https://erameno.fr">Erameno</a>
   </footer>
 
@@ -66,7 +105,12 @@
   <script src="./owlcarousel/owl.carousel.min.js"></script> 
 
   <script src="./Script/theme.js"> </script>
+  <script src="./Script/Onglet.js"> </script>
   <script src="./Script/carou.js"> </script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>
 </html>
