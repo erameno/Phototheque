@@ -25,10 +25,11 @@ main{
 
 footer{
   position: fixed;
-  width: 100%;
+  width: 10%;
   bottom: 0%;
   background-color: azure;
   text-align: end;
+  right: 0%;
 }
 
 #carousel{
@@ -148,4 +149,11 @@ img{
 
 #nav-tab{
   margin-bottom: 1em;
+}
+
+#carousel div button{
+  background-color: transparent;
+  border: none;
+  padding: none;
+  margin: none;
 }
