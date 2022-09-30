@@ -1,3 +1,3 @@
 # Phototheque
 
-https://erameno.fr/phototheque/
+https://erameno.fr/Phototheque/
