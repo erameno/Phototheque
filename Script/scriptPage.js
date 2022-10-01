@@ -1,4 +1,4 @@
-let img = [...document.getElementsByClassName("img")];
+let img = [...document.getElementsByClassName("imgC")];
 var divInfo = document.getElementById("divInfo");
 var btnR = document.getElementById("btnReturn");
 var btnDownload = document.getElementById("btnDel");
