@@ -1,6 +1,6 @@
-$(document).ready(function(){
-    $(".owl-carousel").owlCarousel();
-  });
+// $(document).ready(function(){
+//     $(".owl-carousel").owlCarousel();
+//   });
 
 var owl = $('.owl-carousel');
 owl.owlCarousel({
@@ -8,16 +8,16 @@ owl.owlCarousel({
     loop:true,
     margin:20,
     autoplay:true,
-    autoplayTimeout:1500,
+    autoplayTimeout:3000,
     autoplayHoverPause:true,
     nav : true
 });
 
-owl.on('mousewheel', '.owl-stage', function (e) {
-  if (e.deltaY>0) {
-      owl.trigger('next.owl');
-  } else {
-      owl.trigger('prev.owl');
-  }
-  e.preventDefault();
-});
+// owl.on('mousewheel', '.owl-stage', function (e) {
+//   if (e.deltaY>0) {
+//       owl.trigger('next.owl');
+//   } else {
+//       owl.trigger('prev.owl');
+//   }
+//   e.preventDefault();
+// });

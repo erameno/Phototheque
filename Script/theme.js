@@ -5,6 +5,7 @@ var footer = document.getElementById("footer");
 var body = document.getElementById("body");
 var header = document.getElementById("header");
 var a = document.getElementById("a");
+var nav = document.getElementById("nav-tab");
 
 var theme = localStorage.getItem('theme');
 if(theme == 'Dark'){
@@ -16,6 +17,7 @@ else{
 
 function Dark(){
 
+    nav.classList.add("navDark");
     header.className = 'headerDark';
     a.style.color = 'white';
     main.className = 'bodyDark';
@@ -30,6 +32,7 @@ function Dark(){
 
 function White(){
     
+    nav.classList.remove("navDark");
     header.className = 'headerWhite';
     a.style.color = 'black';
     main.className = 'bodyWhite';
